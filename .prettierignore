@@ -1,0 +1,9 @@
+# Generated / vendored
+.next/
+node_modules/
+pnpm-lock.yaml
+prisma/migrations/
+
+# Course-authored content (kept verbatim)
+specs/
+prompts.md

@@ -1,0 +1,19 @@
+// Prisma schema for AgentClinic.
+// Docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+/// Clinic-level branding shown in the site header/banner.
+/// Phase 0 seeds exactly one row; later phases build real content around it.
+model ClinicInfo {
+  id      Int    @id @default(autoincrement())
+  name    String
+  tagline String
+}
