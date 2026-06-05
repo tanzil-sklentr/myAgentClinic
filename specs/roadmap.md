@@ -4,7 +4,7 @@ Sliced into **very small, vertical phases**. Each phase ships one thin,
 end-to-end, demoable feature — from UI to database — building toward the
 booking-first mission.
 
-## Phase 0 — Walking skeleton
+## Phase 0 — Walking skeleton ✅ Complete
 
 - Scaffold Next.js + TypeScript + Tailwind app
 - Connect MySQL via Prisma; one trivial model and a page that reads it

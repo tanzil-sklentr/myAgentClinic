@@ -16,6 +16,8 @@ How we know the skeleton works and the branch can merge.
 - [ ] The home page is a minimal AgentClinic landing page — the default Next.js
       starter content is gone, replaced with the `ClinicInfo` banner and a
       one-line welcome framing the clinic.
+- [ ] The layout is split into `Header`, `Main`, and `Footer`, **each in its own
+      file** under `components/layout/`, composed by `MainLayout`.
 
 ## Pipeline proof (the point of Phase 0)
 
