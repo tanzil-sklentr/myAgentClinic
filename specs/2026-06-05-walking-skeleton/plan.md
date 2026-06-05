@@ -42,8 +42,9 @@ step toward a DB-backed page rendering a seeded `ClinicInfo` row.
 
 6.1 Create a `MainLayout` component that arranges the page as header / main /
     footer.
-6.2 Split it into three subcomponents — `Header`, `Main`, and `Footer` — kept
-    under `components/layout/`.
+6.2 Split it into three subcomponents — `Header`, `Main`, and `Footer` — each in
+    its own file under `components/layout/` (`Header.tsx`, `Main.tsx`,
+    `Footer.tsx`), composed by `MainLayout.tsx`.
 6.3 Render the `ClinicInfo` banner through the layout (clinic name in the
     header, name + tagline in the footer); the home page supplies the hero as
     the main content.

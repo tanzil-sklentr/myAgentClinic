@@ -19,6 +19,9 @@ from MySQL (via Prisma) and renders it on a styled page. This is the
 - A **minimal AgentClinic home page**: the default Next.js starter content is
   replaced with a clean, attractive landing page built around the `ClinicInfo`
   banner, including a one-line welcome that frames the clinic.
+- A **layout component** (`MainLayout`) that arranges the page as header / main /
+  footer, with the `Header`, `Main`, and `Footer` each kept in **its own file**
+  under `components/layout/`.
 
 ## Scope (out)
 
@@ -41,6 +44,9 @@ from MySQL (via Prisma) and renders it on a styled page. This is the
 - **Home page:** ships a minimal but presentable AgentClinic landing page (not
   the Next.js starter), so the skeleton looks like the product from day one —
   matching Steve's "attractive site" goal and making demos land quickly.
+- **Component structure:** `Header`, `Main`, and `Footer` each live in their own
+  file under `components/layout/`, composed by `MainLayout` — one component per
+  file so each can grow independently in later phases without churn.
 
 ## Context
 
