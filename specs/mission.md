@@ -24,7 +24,8 @@ booking. Anything beyond booking is deferred.
   dashboard giving agents and staff easy access.
 - **Susan (Product)** — features covering agents and their ailments, therapies,
   and booking appointments.
-- **Steve (Marketing)** — an attractive site that works well in a modern browser.
+- **Steve (Marketing)** — an attractive site that works well in a modern browser
+  and is **fully responsive**, looking great from phone to desktop.
 
 ## Target audience
 
@@ -45,7 +46,8 @@ users, it is built for:
 ## Success for v1
 
 An agent can land on the site, find a therapy for their ailment, and complete a
-booking — and staff can see and manage that booking from the dashboard.
+booking — and staff can see and manage that booking from the dashboard. Every
+screen works well across phone, tablet, and desktop (**responsive by default**).
 
 ## Out of scope for v1
 

@@ -21,13 +21,21 @@ dashboard, and Steve's goal of an attractive site in modern browsers.
 - **Styling:** Tailwind CSS — fast, consistent, modern look
 - **Components:** React + a headless component library (e.g. shadcn/ui) for an
   attractive, accessible dashboard
-- **Target:** modern evergreen browsers (Chrome, Edge, Firefox, Safari)
+- **Responsive design:** **mobile-first and fully responsive** — every screen is
+  built to work from small phones to large desktops, using Tailwind's responsive
+  breakpoints (`sm`/`md`/`lg`/`xl`). Layouts use fluid containers and adapt
+  spacing, type scale, and structure across viewports.
+- **Target:** modern evergreen browsers (Chrome, Edge, Firefox, Safari), across
+  phone, tablet, and desktop viewports
 
 ## Quality & tooling
 
 - **Linting/format:** ESLint + Prettier
 - **Type checking:** `tsc --noEmit` in CI
-- **Testing:** Vitest (unit) + Playwright (end-to-end booking flow)
+- **Testing:** **Vitest** is the validation test runner — each phase's
+  `validation.md` acceptance criteria are backed by Vitest tests, run via the
+  `test` script in `package.json` (`pnpm test`). Playwright covers the
+  end-to-end booking flow.
 - **Package manager:** pnpm
 
 ## Hosting (target)
@@ -40,3 +48,5 @@ dashboard, and Steve's goal of an attractive site in modern browsers.
 - Server Actions / route handlers for mutations (e.g. creating a booking)
 - Environment config via `.env` (never committed); typed env access
 - Schema is the source of truth for agents, ailments, therapies, appointments
+- **Responsive by default:** every page/component is built mobile-first with
+  Tailwind breakpoints; no fixed-width, desktop-only layouts
