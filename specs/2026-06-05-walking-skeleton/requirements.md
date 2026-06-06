@@ -22,13 +22,15 @@ from MySQL (via Prisma) and renders it on a styled page. This is the
 - A **layout component** (`MainLayout`) that arranges the page as header / main /
   footer, with the `Header`, `Main`, and `Footer` each kept in **its own file**
   under `components/layout/`.
+- A **responsive UI**: the page and layout are built mobile-first and adapt
+  cleanly from small phones to large desktops, with no horizontal overflow.
 
 ## Scope (out)
 
 - No agents, ailments, therapies, appointments, or booking yet (those are
   Phase 1+).
 - No authentication, dashboards, or deploy/hosting (deploy is deferred).
-- No tests beyond a manual run (formal e2e arrives in Phase 8).
+- No tests beyond a manual run (formal e2e arrives in Phase 5).
 
 ## Decisions
 
@@ -47,6 +49,10 @@ from MySQL (via Prisma) and renders it on a styled page. This is the
 - **Component structure:** `Header`, `Main`, and `Footer` each live in their own
   file under `components/layout/`, composed by `MainLayout` — one component per
   file so each can grow independently in later phases without churn.
+- **Responsive design:** built mobile-first with Tailwind responsive breakpoints
+  (`sm`/`md`/`lg`), per `specs/tech-stack.md` — fluid containers and adaptive
+  spacing/type scale, so the skeleton sets the responsive baseline every later
+  phase inherits.
 
 ## Context
 

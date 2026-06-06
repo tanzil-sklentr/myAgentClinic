@@ -17,7 +17,7 @@ export default async function Home() {
   return (
     <MainLayout clinicName={name} tagline={tagline}>
       {/* Hero — the home page's main content */}
-      <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-indigo-50 via-white to-sky-50 p-10 shadow-sm sm:p-16">
+      <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-indigo-50 via-white to-sky-50 p-6 shadow-sm sm:p-10 lg:p-16">
         <p className="mb-4 inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium uppercase tracking-wide text-indigo-700">
           Now accepting agents
         </p>

@@ -37,6 +37,9 @@ step toward a DB-backed page rendering a seeded `ClinicInfo` row.
     relief from their humans") per `specs/mission.md`.
 5.3 Apply simple, attractive Tailwind layout/branding (header + hero) that works
     in modern browsers — a clean base later phases build on.
+5.4 Make it responsive (mobile-first): fluid containers, adaptive spacing and
+    type scale via Tailwind breakpoints (`sm`/`md`/`lg`), no horizontal overflow
+    on small screens.
 
 ## 6. Extract a layout component
 
@@ -48,6 +51,9 @@ step toward a DB-backed page rendering a seeded `ClinicInfo` row.
 6.3 Render the `ClinicInfo` banner through the layout (clinic name in the
     header, name + tagline in the footer); the home page supplies the hero as
     the main content.
+6.4 Keep the layout shell responsive: a fluid max-width container with
+    breakpoint-aware horizontal padding, so header/main/footer adapt from phone
+    to desktop.
 
 ## 7. Verify the pipeline
 

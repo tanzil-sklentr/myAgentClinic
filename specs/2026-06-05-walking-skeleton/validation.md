@@ -18,6 +18,10 @@ How we know the skeleton works and the branch can merge.
       one-line welcome framing the clinic.
 - [ ] The layout is split into `Header`, `Main`, and `Footer`, **each in its own
       file** under `components/layout/`, composed by `MainLayout`.
+- [ ] The UI is **responsive**: at a narrow mobile width (~375px) there is no
+      horizontal scroll/overflow, and the layout adapts (spacing/type scale)
+      up to desktop widths — verified via Tailwind responsive breakpoints in the
+      page and layout components.
 
 ## Pipeline proof (the point of Phase 0)
 
